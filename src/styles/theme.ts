@@ -11,6 +11,10 @@ export const theme = extendTheme({
       "500": "#FFBA08",
     },
   },
+  fonts: {
+    body: "Poppins",
+    heading: "Poppins",
+  },
   styles: {
     global: {
       body: {
