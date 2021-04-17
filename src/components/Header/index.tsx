@@ -14,19 +14,12 @@ export function Header({ allowGoBack = false }: HeaderProps) {
   };
 
   return (
-    <Flex
-      w="100vw"
-      height="100px"
-      p="6"
-      align="center"
-      justify="center"
-      bg="red"
-    >
+    <Flex w="100vw" height="100px" p="6" align="center" justify="center">
       {allowGoBack && (
         <IconButton
           position="absolute"
           left="8"
-          aria-label="Open navigation"
+          aria-label="Navigation go back"
           icon={<Icon as={FaChevronLeft} />}
           fontSize="16"
           variant="unstyled"
