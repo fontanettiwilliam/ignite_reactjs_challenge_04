@@ -3,7 +3,7 @@ import { Tip } from "./Tip";
 
 export function TravelTips() {
   return (
-    <Flex w="100%" height="335px" align="center" justify="center">
+    <Flex w="100%" align="center" justify="center" paddingY="16">
       <Flex
         w="100%"
         maxWidth="1160"
