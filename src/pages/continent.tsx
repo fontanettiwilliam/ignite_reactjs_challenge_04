@@ -6,11 +6,19 @@ import {
   Image,
   Avatar,
   VStack,
+  IconButton,
+  Icon,
+  Tooltip,
 } from "@chakra-ui/react";
+import { FaInfoCircle } from "react-icons/fa";
 
 import { Header } from "../components/Header";
 
 export default function Home() {
+  const handleInfo = () => {
+    console.log("oi");
+  };
+
   return (
     <Box overflowX="hidden">
       <Header allowGoBack />
@@ -77,6 +85,14 @@ export default function Home() {
               </Text>
               <Text fontWeight="medium" fontSize="20" textTransform="lowercase">
                 cidades +100
+                <Tooltip
+                  label="Número de cidades entre as 100 mais visitadas do mundo"
+                  fontSize="md"
+                >
+                  <span>
+                    <Icon as={FaInfoCircle} color="gray.500" ml="4" />
+                  </span>
+                </Tooltip>
               </Text>
             </Box>
           </Flex>
@@ -101,14 +117,14 @@ export default function Home() {
                 objectFit="cover"
                 src="/images/london.jpg"
                 alt="London"
-                borderTopRadius="12"
+                borderTopRadius="8"
               />
               <Flex
                 h="50%"
                 w="100%"
                 borderColor="yellow.500"
                 borderWidth="thin"
-                borderBottomRadius="12"
+                borderBottomRadius="8"
                 flexDirection="row"
                 align="center"
                 justifyContent="space-around"
@@ -134,14 +150,14 @@ export default function Home() {
                 objectFit="cover"
                 src="/images/paris.jpg"
                 alt="Paris"
-                borderTopRadius="12"
+                borderTopRadius="8"
               />
               <Flex
                 h="50%"
                 w="100%"
                 borderColor="yellow.500"
                 borderWidth="thin"
-                borderBottomRadius="12"
+                borderBottomRadius="8"
                 flexDirection="row"
                 align="center"
                 justifyContent="space-around"
@@ -167,14 +183,14 @@ export default function Home() {
                 objectFit="cover"
                 src="/images/roma.jpg"
                 alt="Paris"
-                borderTopRadius="12"
+                borderTopRadius="8"
               />
               <Flex
                 h="50%"
                 w="100%"
                 borderColor="yellow.500"
                 borderWidth="thin"
-                borderBottomRadius="12"
+                borderBottomRadius="8"
                 flexDirection="row"
                 align="center"
                 justifyContent="space-around"
@@ -200,14 +216,14 @@ export default function Home() {
                 objectFit="cover"
                 src="/images/praga.jpg"
                 alt="Praga"
-                borderTopRadius="12"
+                borderTopRadius="8"
               />
               <Flex
                 h="50%"
                 w="100%"
                 borderColor="yellow.500"
                 borderWidth="thin"
-                borderBottomRadius="12"
+                borderBottomRadius="8"
                 flexDirection="row"
                 align="center"
                 justifyContent="space-around"
@@ -233,14 +249,14 @@ export default function Home() {
                 objectFit="cover"
                 src="/images/amsterda.jpg"
                 alt="Amsterda"
-                borderTopRadius="12"
+                borderTopRadius="8"
               />
               <Flex
                 h="50%"
                 w="100%"
                 borderColor="yellow.500"
                 borderWidth="thin"
-                borderBottomRadius="12"
+                borderBottomRadius="8"
                 flexDirection="row"
                 align="center"
                 justifyContent="space-around"
