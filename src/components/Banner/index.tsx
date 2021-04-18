@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 
 export function Banner() {
   return (
@@ -12,7 +12,7 @@ export function Banner() {
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
     >
-      <Flex maxWidth="1160" align="center">
+      <Flex w="100%" maxWidth="1160" align="center">
         <Flex flex={1} flexDirection="column">
           <Text color="white" fontSize="2xl" fontWeight="bold" mb="4">
             5 Continentes, <br /> infinitas possibilidades.
