@@ -14,7 +14,15 @@ export function Header({ allowGoBack = false }: HeaderProps) {
   };
 
   return (
-    <Flex w="100vw" height="100px" p="6" align="center" justify="center">
+    <Flex
+      as="header"
+      w="100%"
+      height="6.25rem"
+      p="6"
+      align="center"
+      justify="center"
+      bg="white"
+    >
       {allowGoBack && (
         <IconButton
           position="absolute"

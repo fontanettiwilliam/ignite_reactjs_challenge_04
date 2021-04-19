@@ -1,28 +1,42 @@
-import { Box, Divider, Center, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
+import { Slider } from "../components/Slider";
 import { TravelTips } from "../components/TravelTips";
 
 export default function Home() {
   return (
-    <Box>
+    <>
       <Header />
 
       <Banner />
 
-      <TravelTips />
+      <Flex
+        as="main"
+        maxWidth="1160px"
+        justify="center"
+        mx="auto"
+        direction="column"
+      >
+        <TravelTips />
 
-      <Center flexDirection="column">
-        <Box width="100px" mb="16">
-          <Divider borderColor="gray.600" borderWidth="1px" />
-        </Box>
+        <Divider
+          width="90px"
+          mt="20"
+          mx="auto"
+          mb="3.25rem"
+          borderWidth="2px"
+          borderColor="gray.600"
+        />
 
-        <Text textAlign="center" fontSize="2xl" fontWeight="bold">
-          Vamos nessa? <br /> Então escolha seu continente
-        </Text>
-      </Center>
+        <Heading textAlign="center" fontWeight="medium" lineHeight="3.375rem">
+          Vamos nessa?
+          <br />
+          Então escolha seu continente
+        </Heading>
 
-      {/* Slidder */}
-    </Box>
+        <Slider />
+      </Flex>
+    </>
   );
 }
